@@ -48,6 +48,21 @@ npx @mcptoolshop/xrpl-camp --help     # see all commands
 - macOS x64 (Intel)
 - Windows x64
 
+## Troubleshooting
+
+```bash
+npx @mcptoolshop/xrpl-camp self-check         # diagnose your environment
+npx @mcptoolshop/xrpl-camp support-bundle     # write a zip for bug reports
+npx @mcptoolshop/xrpl-camp --print-cache-path # show cached binary location
+npx @mcptoolshop/xrpl-camp --clear-cache      # force fresh re-download
+```
+
+**Pin to a specific version** if the latest has a regression:
+
+```bash
+npx @mcptoolshop/xrpl-camp@1.0.5 start
+```
+
 ## Security
 
 All binaries are verified against SHA256 checksums before execution. No telemetry. No network access beyond the initial download from GitHub.
