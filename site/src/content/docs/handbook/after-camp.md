@@ -20,7 +20,7 @@ The XRP Ledger has official SDKs in several languages:
 - **Java:** [xrpl4j](https://github.com/XRPLF/xrpl4j)
 - **C#:** available via community libraries
 
-The official [XRPL.org developer documentation](https://xrpl.org/docs) is the definitive reference. Start with the "Build & Run" tutorials.
+The official [XRPL.org developer documentation](https://xrpl.org/docs) is the definitive reference. The [XRPL Learning Portal](https://learn.xrpl.org/) has guided courses that pick up right where Camp leaves off.
 
 ### Project ideas for beginners
 
@@ -41,10 +41,10 @@ All of these run safely on the Testnet.
 
 The XRP Ledger powers real financial infrastructure:
 
-- **Cross-border payments** — Financial institutions use XRPL-based solutions to move money between countries in seconds instead of days
-- **Tokenization** — Companies issue stablecoins, CBDCs, and asset-backed tokens on the XRPL
-- **Decentralized exchange (DEX)** — The XRPL has a built-in order book where any two tokens can be traded directly, without a centralized exchange
-- **NFTs** — The XRPL supports native NFTs (XLS-20) with lower fees than Ethereum
+- **Cross-border payments** — Ripple's On-Demand Liquidity uses XRP to settle international payments in seconds. Major institutions (SBI Holdings, Santander) process billions through the network
+- **Tokenization** — Companies issue stablecoins (RLUSD, USDC), CBDCs, and asset-backed tokens on the XRPL. Tokenized value reached ~$395M by late 2025
+- **Decentralized exchange (DEX)** — The XRPL has a built-in order book plus AMM pools where any two tokens can be traded directly, without a centralized exchange — and without the front-running problems that plague Ethereum DEXes
+- **NFTs** — The XRPL supports native NFTs (XLS-20) with lower minting costs than Ethereum
 
 ### How XRPL compares to other chains
 
@@ -61,9 +61,10 @@ No chain is "better" — they solve different problems. Knowing one makes learni
 ## If you want to connect with the community
 
 - **[XRPL.org](https://xrpl.org/)** — Official docs, tutorials, and ecosystem directory
+- **[XRPL Learning Portal](https://learn.xrpl.org/)** — Guided courses that build on what you learned in Camp
 - **[XRPL Grants](https://xrplgrants.org/)** — Funding for open-source XRPL projects (grants up to $100K+)
-- **[Dev Discord](https://discord.gg/xrpldev)** — Ask questions, find collaborators
-- **[XRPL Commons](https://www.xrplcommons.org/)** — Education and community programs
+- **[XRPL Commons](https://www.xrpl-commons.org/)** — Education programs, hackathons, and the Core Dev Bootcamp
+- **[XRPL Job Board](https://jobs.xrpl.org/)** — Career opportunities in the XRPL ecosystem
 
 ## If you just want to move on
 

@@ -48,7 +48,7 @@ The Testnet faucet is a service run by the XRPL community that gives test XRP to
 
 ### My wallet has a "reserve" — did I lose some XRP?
 
-No. The XRPL requires every wallet to hold a small reserve (10 XRP on Testnet) to prevent spam. Think of it as a refundable deposit — your wallet exists on the ledger, and the reserve proves you are serious. During training, this comes from free faucet funds, so you lose nothing.
+No. The XRPL requires every wallet to hold a small base reserve (1 XRP, reduced from 10 in late 2024) to prevent spam. Think of it as a refundable deposit — your wallet exists on the ledger, and the reserve proves you are serious. Each object you own on the ledger (trust lines, offers) costs an additional 0.2 XRP owner reserve. During training, this all comes from free faucet funds, so you lose nothing.
 
 ### The transaction says "tesSUCCESS" — what does that mean?
 

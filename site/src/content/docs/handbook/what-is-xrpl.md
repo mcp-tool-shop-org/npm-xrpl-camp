@@ -43,7 +43,7 @@ Some blockchains try to do everything — smart contracts, NFTs, decentralized a
 | **Testnet** | A practice copy of the XRP Ledger. Everything works the same, but the money is not real |
 | **Faucet** | A free dispenser that gives you test XRP on the Testnet so you can practice |
 | **Transaction** | An instruction recorded on the ledger, like "send 10 XRP from address A to address B" |
-| **Reserve** | A small amount of XRP (10 on Testnet) that your wallet must hold to exist on the ledger |
+| **Reserve** | A small amount of XRP (1 XRP base reserve) that your wallet must hold to exist on the ledger — reduced from 10 in late 2024 |
 | **Validated** | The network has agreed this transaction is final — it cannot be reversed or changed |
 
 ## Why learn this?
