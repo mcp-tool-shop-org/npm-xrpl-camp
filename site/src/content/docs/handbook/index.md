@@ -5,13 +5,16 @@ sidebar:
   order: 0
 ---
 
-Welcome to the XRPL Camp handbook. This is the complete guide to learning the XRP Ledger through guided, hands-on training modules.
+Welcome to the XRPL Camp handbook. Whether you have never touched blockchain or you are a developer looking to add XRPL to your toolkit, this guide has you covered.
 
 ## What's inside
 
+- **[What Is the XRP Ledger?](/npm-xrpl-camp/handbook/what-is-xrpl/)** -- A plain-language primer for complete beginners
 - **[Getting Started](/npm-xrpl-camp/handbook/getting-started/)** -- Install with npx and run your first module
 - **[Training Modules](/npm-xrpl-camp/handbook/modules/)** -- What you will learn in each module
 - **[Verification](/npm-xrpl-camp/handbook/verification/)** -- Certificate verification and XRPL receipts
+- **[FAQ](/npm-xrpl-camp/handbook/faq/)** -- Every question and worry you might have, answered honestly
+- **[After Camp](/npm-xrpl-camp/handbook/after-camp/)** -- What to do next with your new skills
 
 ## What is XRPL Camp?
 
