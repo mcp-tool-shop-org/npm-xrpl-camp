@@ -2,6 +2,15 @@
 
 All notable changes to this project are documented here.
 
+## [1.1.0] — 2026-03-19
+
+### Added
+- Auto-resume: `start` picks up where you left off
+- Interactive memo prompt in guided flow
+- `status` command with rich visual checklist
+- Lesson timing tracked in certificate and proof pack
+- Beginner-friendly handbook pages (What Is XRPL, FAQ, After Camp)
+
 ## [1.0.6] — 2026-03-02
 
 ### Added
