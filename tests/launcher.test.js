@@ -2,6 +2,7 @@ const { describe, it } = require("node:test");
 const assert = require("node:assert/strict");
 const path = require("node:path");
 const fs = require("node:fs");
+const { execFileSync } = require("node:child_process");
 
 describe("xrpl-camp launcher", () => {
   const binPath = path.join(__dirname, "..", "bin", "xrpl-camp.js");
@@ -29,12 +30,11 @@ describe("xrpl-camp launcher", () => {
     assert.ok(config.toolName.length > 0);
   });
 
-  it("config version matches package.json version", () => {
-    const pkg = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "package.json"), "utf-8"));
+  it("config version is valid semver", () => {
     const source = fs.readFileSync(binPath, "utf-8");
     const match = source.match(/JSON\.stringify\((\{[\s\S]*?\})\)/);
     const config = new Function(`return ${match[1]}`)();
-    assert.equal(config.version, pkg.version);
+    assert.match(config.version, /^\d+\.\d+\.\d+$/);
   });
 
   it("config tag follows v-prefix convention", () => {
@@ -58,5 +58,20 @@ describe("xrpl-camp launcher", () => {
   it("xrpl-camp.js has shebang line", () => {
     const source = fs.readFileSync(binPath, "utf-8");
     assert.ok(source.startsWith("#!/usr/bin/env node"));
+  });
+
+  it("--version prints wrapper version and exits 0", () => {
+    const out = execFileSync(process.execPath, [binPath, "--version"], {
+      encoding: "utf-8",
+    });
+    const pkg = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "package.json"), "utf-8"));
+    assert.match(out.trim(), new RegExp(`^xrpl-camp ${pkg.version.replace(/\./g, "\\.")} \\(wrapper\\)$`));
+  });
+
+  it("-V prints wrapper version and exits 0", () => {
+    const out = execFileSync(process.execPath, [binPath, "-V"], {
+      encoding: "utf-8",
+    });
+    assert.match(out.trim(), /^xrpl-camp \d+\.\d+\.\d+ \(wrapper\)$/);
   });
 });

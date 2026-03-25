@@ -2,6 +2,16 @@
 
 All notable changes to this project are documented here.
 
+## [1.1.1] — 2026-03-25
+
+### Added
+- `--version` / `-V` flag — prints wrapper version and exits
+- CHANGELOG.md included in npm tarball
+- 2 new CLI flag tests (10 total)
+
+### Fixed
+- Version test no longer couples wrapper version to upstream binary version
+
 ## [1.1.0] — 2026-03-19
 
 ### Added

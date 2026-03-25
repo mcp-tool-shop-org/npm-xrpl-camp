@@ -1,6 +1,14 @@
 #!/usr/bin/env node
 "use strict";
 
+// Wrapper-level --version (shows wrapper version, not binary version)
+const arg1 = process.argv[2];
+if (arg1 === "--version" || arg1 === "-V") {
+  const pkg = require("../package.json");
+  console.log(`xrpl-camp ${pkg.version} (wrapper)`);
+  process.exit(0);
+}
+
 // Pure JSON config — npm-launcher derives asset names from convention:
 //   binary:    xrpl-camp-1.1.0-linux-x64
 //   checksums: checksums-1.1.0.txt
