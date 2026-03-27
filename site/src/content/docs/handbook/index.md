@@ -15,6 +15,7 @@ Welcome to the XRPL Camp handbook. Whether you have never touched blockchain or 
 - **[Verification](/npm-xrpl-camp/handbook/verification/)** -- Certificate verification and XRPL receipts
 - **[FAQ](/npm-xrpl-camp/handbook/faq/)** -- Every question and worry you might have, answered honestly
 - **[After Camp](/npm-xrpl-camp/handbook/after-camp/)** -- What to do next with your new skills
+- **[For Beginners](/npm-xrpl-camp/handbook/beginners/)** -- New to XRPL Camp? Start here
 
 ## What is XRPL Camp?
 
